@@ -1,3 +1,65 @@
 page-home {
+  ion-header {
+    color: color($colors, dark);
+  }
 
+  .card-background-page {
+
+    padding-top: 0px;
+
+    ion-card {
+      position: relative;
+      text-align: center;
+    }
+  
+    .card-title {
+      position: absolute;
+      top: 36%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+    }
+  
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      top: 52%;
+      width: 100%;
+      color: #fff;
+    }
+  
+  }
+
+  .card_title {
+    margin-left: 10px;
+    color: #4f4f4f;
+    font-size: 0.9em;
+    font-weight: bold;
+    line-height: 1em;    
+    border-color: #d41d23;
+    border-left-style: solid;
+    border-left-width: 5px;
+    padding: 3px 0px 0px 3px;
+  }
+
+  ion-content > div.scroll-content > ion-item > div.item-inner > div > ion-label {
+    margin: 0;
+  }
+
+  /* <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <div class="card_title">관제센터</div>
+        <ion-card>     */
+  ion-grid {
+    ion-row {
+      
+      ion-card {
+        margin-bottom: 3px!important;
+        margin-top: 3px!important;
+      }        
+      
+    }
+  }
 }

@@ -9,21 +9,30 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+/**
+ * Adding imports
+ */
+// import { CustomHeader } from '../pages/share/custom-header/custom-header'
+// import { CustomHeaderModule } from '../pages/share/custom-header/custom-header.module'
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    // CustomHeader
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    // CustomHeaderModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    // CustomHeader
   ],
   providers: [
     StatusBar,

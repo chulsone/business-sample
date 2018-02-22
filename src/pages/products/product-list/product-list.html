@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><custom-header></custom-header> 제품소개</ion-title>
+    
+  </ion-navbar>
+  
+</ion-header>
+  
+<ion-content class="card-background-page">
+
+  <ion-card *ngFor="let item of category_list; let i=index" (click)="clickCategoryImage(i)">
+    <img src="{{item.img_url}}"/>
+    <div class="card-title">{{item.name}}</div>
+    <div class="card-subtitle">{{item.comment}}</div>
+  </ion-card>
+  
+</ion-content>

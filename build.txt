@@ -1,0 +1,21 @@
+ionic cordova build android --prod --release
+
+(gra)
+
+cd D:/JOONCHUL/Project/Ionic2/01_MyProdjcts/02-business-sample-01/platforms/android/build/outputs/apk
+
+/* keytool -genkey -v -keystore stroke-key.keystore -alias chul_alias_name -keyalg RSA -keysize 2048 -validity 10000 */
+
+cd D:/JOONCHUL/Project/Ionic2/01_MyProdjcts/02-business-sample-01/platforms/android/build/outputs/apk;
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore stroke-key.keystore android-release-unsigned.apk chul_alias_name
+
+123456789
+
+D:\JOONCHUL\sdk\build-tools\19.1.0\zipalign -f -v 4 android-release-unsigned.apk business-sample.apk
+
+( git push --set-upstream origin master )
+
+( git config --global http.postBuffer 157286400 )
+
+ionic cordova plugin add cordova-plugin-whitelist
+

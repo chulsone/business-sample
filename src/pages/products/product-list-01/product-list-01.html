@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><custom-header></custom-header> {{selectedCategory}}</ion-title>
+    
+  </ion-navbar>
+  
+</ion-header>
+  
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let item of product_list">
+      <ion-thumbnail item-start>
+        <img src="{{item.img_url}}">
+      </ion-thumbnail>
+      <h2>{{item.title}}</h2>
+      <p>{{item.content}}</p>
+      <button ion-button clear item-end (click)="clickViewButton(item)">View</button>
+    </ion-item>
+  </ion-list>
+  
+</ion-content>

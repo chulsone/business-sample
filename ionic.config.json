@@ -1,6 +1,6 @@
 {
   "name": "02-business-sample-01",
-  "app_id": "",
+  "app_id": "0814553a",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
